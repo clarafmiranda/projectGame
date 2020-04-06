@@ -1,4 +1,4 @@
-let game = new runnerGame();
+let game = new Game();
 
 function preload() {
   game.initialize();
@@ -6,7 +6,6 @@ function preload() {
 
 function setup() {
   createCanvas(928, 403);
-  
 }
 
 function draw() {

@@ -29,7 +29,7 @@ class Background {
   }
 
   display() {
-    /* thsi is looping over the array using a for loop.
+    /* this is looping over the array using a for loop, instead of crating the function parallax().
       for (let i = 0; i < this.layers.length; i++) {
       this.layers[i].x -= this.layers[i].speed; // this moves the layers to the left at the layers speed
       image(this.layers[i].src, this.layers[i].x, 0);
