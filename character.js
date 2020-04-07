@@ -8,7 +8,7 @@ class Character {
   characterSetup() {
     this.height = this.imgRun.height;
     this.width = this.imgRun.width;
-    this.marginBottom = 36;
+    this.marginBottom = 43;
     this.x = 48;
     this.y = height - (this.height + this.marginBottom);
   }

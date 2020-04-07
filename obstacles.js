@@ -1,17 +1,13 @@
-class Obstacle {
+class Rupee {
   constructor() {
     this.imgRupee = loadImage("assets/crystals/rupee.gif");
-  }
-
-  rupeeSetup() {
-    this.height = this.imgRupee.height;
-    this.width = this.imgRupee.width;
-    this.marginBottom = 36;
+    // this.height = this.imgRupee.height + 50;
     this.x = width;
-    this.y = random(0, height - this.height);
+    this.y = random(150, height - 100);
   }
 
   display() {
+    console.log(height, width, this.imgRupee.height, this.imgRupee.width);
     this.x--;
     image(this.imgRupee, this.x, this.y);
   }
