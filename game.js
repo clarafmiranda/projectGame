@@ -1,15 +1,30 @@
 class Game {
-  // Iteration 1
-  // Draw the grid
-
-  initialize() {
+  constructor() {
+    this.rupees = [];
+  }
+  loading() {
     this.background = new Background();
-    this.runner = new Runner();
+    this.character = new Character();
+    this.foreground = new Foreground();
+    this.obstacles = new Obstacle();
+  }
+
+  setup() {
+    this.character.characterSetup();
+    this.obstacles.rupeeSetup();
   }
 
   display() {
     clear();
     this.background.display();
-    this.runner.display();
+    this.character.display();
+    this.foreground.display();
+
+    if (frameCount % 60 === 0) {
+      this.rupees.push(new Obstacle());
+    }
+    this.rupees.forEach((rupee) => {
+      this.obstacles.display();
+    });
   }
 }

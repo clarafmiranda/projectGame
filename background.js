@@ -12,10 +12,7 @@ class Background {
       { src: loadImage("assets/background/07_firstTrees.png"), x: 0, speed: 3.5 },
       // { src: loadImage("assets/background/06_firstParticles.png"), x: 0, speed: 6 },
       { src: loadImage("assets/background/05_treeTops.png"), x: 0, speed: 4 },
-      { src: loadImage("assets/background/04_grass.png"), x: 0, speed: 4.5 },
-      { src: loadImage("assets/background/03_mist.png"), x: 0, speed: 5 },
-      { src: loadImage("assets/background/02_bushes.png"), x: 0, speed: 5.5 },
-      { src: loadImage("assets/background/01_bushes.png"), x: 0, speed: 6 },
+      { src: loadImage("assets/background/03_mist.png"), x: 0, speed: 4.5 },
     ];
   }
 
