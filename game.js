@@ -3,7 +3,6 @@ class Game {
     this.rupeesArray = [];
     this.batsArray = [];
     this.soundCoin;
-
     // this.manaArray = [];
   }
 
