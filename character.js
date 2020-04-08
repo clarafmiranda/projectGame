@@ -5,7 +5,7 @@ class Character {
     this.motionSpeed = 0;
   }
 
-  characterSetup() {
+  setup() {
     this.height = this.imgRun.height;
     this.width = this.imgRun.width;
     this.marginBottom = 43;
@@ -14,13 +14,15 @@ class Character {
   }
 
   jump() {
-    this.motionSpeed = -3;
+    this.motionSpeed = -8;
+    /* if (this.y === 100) {
+      this.motionSpeed = 10;
+    } */
   }
 
   display() {
     this.motionSpeed += this.gravity;
     this.y += this.motionSpeed;
-
     if (this.y > height - (this.height + this.marginBottom)) {
       this.y = height - (this.height + this.marginBottom);
     }
