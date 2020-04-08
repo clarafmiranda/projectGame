@@ -2,6 +2,7 @@ class Game {
   constructor() {
     this.rupeesArray = [];
     this.batsArray = [];
+    this.soundCoin;
     // this.manaArray = [];
   }
 
@@ -10,14 +11,19 @@ class Game {
     for (let i = 0; i <= 5; i++) {
       this.rupeeImgs.push(loadImage(`assets/rupees/rupee${i}.png`));
     }
+
     this.batImgs = [];
     for (let i = 0; i <= 3; i++) {
       this.batImgs.push(loadImage(`assets/bat/bat${i}.png`));
     }
+
     /* this.manaImgs = [];
     for (let i = 0; i <= 4; i++) {
       this.manaImgs.push(loadImage(`assets/mana/mana${i}.png`));
     } */
+
+    this.soundCoin = loadSound("assets/sounds/coin.mp3");
+
     this.background = new Background();
     this.character = new Character();
     this.foreground = new Foreground();
@@ -41,6 +47,9 @@ class Game {
 
     this.rupeesArray.forEach((rupee) => {
       rupee.checkCollision(this.character);
+      if (rupee.checkCollision(this.character)) {
+        this.soundCoin.play();
+      }
     });
 
     this.rupeesArray = this.rupeesArray.filter((rupee) => {
@@ -50,18 +59,21 @@ class Game {
     if (frameCount === 1 || frameCount % 90 === 0) {
       this.batsArray.push(new Bat());
     }
+
+    this.character.display();
+    this.foreground.display();
+
     this.batsArray.forEach((bat) => {
       bat.display();
     });
 
-    /* if (frameCount % 900 === 0) {
+    /*
+    if (frameCount % 900 === 0) {
       this.manaArray.push(new Mana());
     }
     this.manaArray.forEach((mana) => {
       mana.display();
-    }); */
-
-    this.character.display();
-    this.foreground.display();
+    }); 
+    */
   }
 }
