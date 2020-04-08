@@ -3,6 +3,7 @@ class Game {
     this.rupeesArray = [];
     this.batsArray = [];
     this.soundCoin;
+
     // this.manaArray = [];
   }
 
@@ -22,7 +23,7 @@ class Game {
       this.manaImgs.push(loadImage(`assets/mana/mana${i}.png`));
     } */
 
-    this.soundCoin = loadSound("assets/sounds/coin.mp3");
+    this.soundCoin = loadSound("assets/sounds/rupee.mp3");
 
     this.background = new Background();
     this.character = new Character();

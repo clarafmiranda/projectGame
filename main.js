@@ -25,3 +25,10 @@ function draw() {
   }
   console.log("spacebar pressed");
 } */
+
+function keyPressed() {
+  let spacebarCode = 32;
+  if (keyCode === spacebarCode) {
+    console.log("sound");
+  }
+}
