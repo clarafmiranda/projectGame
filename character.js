@@ -9,15 +9,15 @@ class Character {
     this.height = this.imgRun.height;
     this.width = this.imgRun.width;
     this.marginBottom = 43;
-    this.x = 48;
+    this.x = 100;
     this.y = height - (this.height + this.marginBottom);
   }
 
   jump() {
-    this.motionSpeed = -8;
-    /* if (this.y === 100) {
-      this.motionSpeed = 10;
-    } */
+    if (this.y < 150) {
+    } else {
+      this.motionSpeed = -8;
+    }
   }
 
   display() {
@@ -27,6 +27,25 @@ class Character {
       this.y = height - (this.height + this.marginBottom);
     }
 
+    rect(this.x, this.y, this.width, this.height);
     image(this.imgRun, this.x, this.y);
   }
+
+  /* jump() {
+    if (this.y < 100) {
+    } else {
+      this.motionSpeed = -2;
+    }
+  }
+
+  display() {
+    this.motionSpeed += this.gravity;
+    this.y += this.motionSpeed;
+
+    if (this.y > height - (this.height + this.marginBottom)) {
+      this.y = height - (this.height + this.marginBottom);
+    }
+
+    image(this.imgRun, this.x, this.y);
+  } */
 }
