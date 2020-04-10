@@ -7,16 +7,21 @@ function preload() {
 function setup() {
   createCanvas(928, 403);
   game.setup();
+
+  /* for (let i = 0; i <= 5; i++) {
+    game.bgPianoArray[i].play();
+  } */
   game.bgSoundPiano.play();
   game.bgSoundBirds.play();
 }
 
 function draw() {
   if (game.start === true) {
+    //game.startingScreenGif.hide();
     game.display();
   } else {
-    background(255, 204, 0);
-    text("Press enter to start", 100, 100);
+    //game.startingScreenGif.show();
+    image(game.startingScreenImg, 0, 0);
   }
 
   if (keyIsDown(32)) {

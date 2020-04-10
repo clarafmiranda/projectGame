@@ -16,7 +16,7 @@ class Character {
   jump() {
     if (this.y < 150) {
     } else {
-      this.motionSpeed = -8;
+      this.motionSpeed = -7;
     }
   }
 
@@ -27,7 +27,6 @@ class Character {
       this.y = height - (this.height + this.marginBottom);
     }
 
-    rect(this.x, this.y, this.width, this.height);
     image(this.imgRun, this.x, this.y);
   }
 

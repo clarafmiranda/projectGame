@@ -6,7 +6,7 @@ class Rupee {
     this.height = this.imgs[0].height;
     this.marginBottom = 43;
     this.x = width;
-    this.y = random(150, height - (this.height + this.marginBottom));
+    this.y = random(130, height - (this.height + this.marginBottom));
   }
 
   checkCollision(obj) {
@@ -35,7 +35,6 @@ class Rupee {
       this.index++;
     }
     this.x -= 10;
-    rect(this.x, this.y, this.width, this.height);
     image(this.imgs[this.index % this.imgs.length], this.x, this.y);
   }
 }
@@ -48,7 +47,7 @@ class Bat {
     this.height = this.imgs[0].height;
     this.marginBottom = 43;
     this.x = width;
-    this.y = random(150, height - (this.height + this.marginBottom));
+    this.y = random(130, height - (this.height + this.marginBottom));
   }
 
   checkCollision(obj) {
@@ -78,7 +77,6 @@ class Bat {
       this.index++;
     }
     this.x -= 8;
-    rect(this.x, this.y, this.width, this.height);
     image(this.imgs[this.index % this.imgs.length], this.x, this.y);
   }
 }
@@ -91,7 +89,7 @@ class Bat {
     this.height = this.imgs[0].height;
     this.marginBottom = 43;
     this.x = width;
-    this.y = random(150, height - (this.height + this.marginBottom));
+    this.y = random(130, height - (this.height + this.marginBottom));
   }
 
   display() {
