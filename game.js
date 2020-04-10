@@ -40,10 +40,6 @@ class Game {
     this.soundDead = loadSound("assets/sounds/dead.mp3");
     this.soundJump = loadSound("assets/sounds/jump.mp3");
 
-    /* this.bgPianoSong = [];
-    for (let i = 0; i <= 5; i++) {
-      this.bgPianoArray.push(loadSound("assets/sounds/bgSoundPiano.mp3"));
-    } */
     this.bgSoundPiano = loadSound("assets/sounds/bgSoundPiano.mp3");
     this.bgSoundBirds = loadSound("assets/sounds/bgSoundBirds.mp3");
 
@@ -125,14 +121,11 @@ class Game {
     }
 
     textFont(this.pixelFont);
-    textSize(18);
     textAlign(CENTER);
     fill(255, 255, 255);
-    text(`score: ${this.score}`, 0, 60, width);
-
-    /* textSize(16);
-    text("score", 0, 48, width);
-    textSize(20);
-    text(`${this.score}`, 0, 72, width); */
+    textSize(14);
+    text(" score", 0, 47, width);
+    textSize(22);
+    text(` ${this.score}`, 0, 72, width);
   }
 }

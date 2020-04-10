@@ -8,11 +8,8 @@ function setup() {
   createCanvas(928, 403);
   game.setup();
 
-  /* for (let i = 0; i <= 5; i++) {
-    game.bgPianoArray[i].play();
-  } */
-  game.bgSoundPiano.play();
-  game.bgSoundBirds.play();
+  game.bgSoundPiano.loop();
+  game.bgSoundBirds.loop();
 }
 
 function draw() {

@@ -9,7 +9,7 @@ class Character {
     this.height = this.imgRun.height;
     this.width = this.imgRun.width;
     this.marginBottom = 43;
-    this.x = 100;
+    this.x = 136;
     this.y = height - (this.height + this.marginBottom);
   }
 
