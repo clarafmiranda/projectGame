@@ -1,4 +1,4 @@
-# The NEverending Run
+# The Neverending Run
 
 ## What is the game about?
 
