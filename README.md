@@ -2,7 +2,7 @@
 
 ## What is the game about?
 
-It's a infinite runner where you have to retrieve rupees while avoiding the bats!
+It's an infinite runner where you have to retrieve rupees while avoiding the bats!
 
 ## Technologies used
 
